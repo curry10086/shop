@@ -86,9 +86,10 @@
         :current-page="queryInfo.pagenum"
         :page-sizes="[1, 2, 5, 10]"
         :page-size="queryInfo.pagesize"
-        layout="total, sizes, prev, pager, next, jumper"
+        layout="slot,total, sizes,prev, pager, next, jumper"
         :total="total"
       >
+        <span>我黄哥要这个信息，一共{{total}}条数据</span>
       </el-pagination>
     </el-card>
     <!-- 添加用户的对话框 -->
