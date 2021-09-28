@@ -74,7 +74,7 @@
         <el-form-item label="父级名称">
             <!-- options用来指定数据源 -->
             <!-- props用来指定配置对象 -->
-            <el-cascader   
+            <el-cascader class="cascader"   
                 :options="parentCateList"
                 :props="cascaderProps"
                 v-model="selectedKeys"
@@ -261,7 +261,7 @@
     .treeTable{
         margin-top: 15px;
     }
-    .el-cascader{
+    .cascader{
         width: 100%;
     }
 
